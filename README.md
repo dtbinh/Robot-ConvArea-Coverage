@@ -25,6 +25,8 @@ The following parameters can be determined by the user :
 
 **xc** and **yc**: Vectors containing the vertex coordinates of the convex environment.
 
+**px** and **py** : Vectors containing the coordinates for the initial robot positions.
+
 **R** : The area sensing radius of the robots.
 
 **Rc** : The communication radius of the robots.
