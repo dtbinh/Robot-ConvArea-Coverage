@@ -1,6 +1,6 @@
 #Robot-ConvArea-Coverage
 
-##Overview
+## Overview
 
 Simulation for area coverage of a convex environment by N ground robots.
 
@@ -11,7 +11,7 @@ of other robots.
 
 The control law implemented is the **r-limited voronoi cell centroid** method.
 
-##Screenshots
+## Screenshots
 
 <img src="https://cloud.githubusercontent.com/assets/20325266/23537679/6e8cc8f0-ffd6-11e6-84f3-5585be9b0836.jpg" width="49%">
 <img src="https://cloud.githubusercontent.com/assets/20325266/23537683/755f027e-ffd6-11e6-861a-9768f6cc7252.jpg" width="49%">
@@ -20,13 +20,13 @@ The control law implemented is the **r-limited voronoi cell centroid** method.
 <img src="https://cloud.githubusercontent.com/assets/20325266/23537684/76a5783e-ffd6-11e6-8538-da219c29d3d4.jpg" width="49%">
 
 
-##How to run
+## How to run
 
 *SIMULATION.m* is the main file from which the simulation is executed.
 
 The rest of the files implement the various functions that are used (see below for details) .
 
-##Parameters
+## Parameters
 
 The following parameters can be determined by the user :
 
@@ -49,7 +49,7 @@ If the next-iteration centroid changes less than this value for ALL robots, then
 
 **robotCount** : The number of ground robots active in the environment.
 
-##How it works
+## How it works
 
 For each robot,the following procedure is executed repeatedly , until the algorithm converges or the iteration limit is reached :
 
@@ -65,7 +65,7 @@ with the sensing circle of the robot.
 * Calculate the output velocity of the robot, which is proportionate to its distance from the centroid (multiplied by the gain factor).
 
 
-##Functions
+## Functions
 
 **BoundedVoronoi()**  
 
@@ -95,7 +95,7 @@ Approximates a circle via a polygon with sufficiently large amount of vertices. 
 represent the sensing circle and communication radius of each robot.
 
 
-##Dependencies
+## Dependencies
 
 This simulation uses *polygeom* for the calculation of polygon centroids. It is licensed under the BSD License.
 
@@ -103,7 +103,7 @@ This simulation uses *polygeom* for the calculation of polygon centroids. It is 
 
 
 
-##License
+## License
 
 This simulation is distributed under Apache License Version 2.0
 
